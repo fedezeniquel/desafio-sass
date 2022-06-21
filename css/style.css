@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: red;
+}
+
+header {
+  text-align: center;
+  background-color: red;
+  padding: 10px;
+}
+header nav {
+  padding: 10px;
+  justify-content: space-evenly;
+}
+header nav li, header nav span {
+  display: inline-block;
+  padding: 10px;
+}
+header nav li li:hover, header nav span li:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+main {
+  background-color: black;
+}
+
+footer {
+  text-align: center;
+  background-color: red;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+  nav {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  img {
+    width: 50%;
+    height: 40vh;
+  }
+  iframe {
+    width: 70%;
+    height: 30vh;
+  }
+}
+/* Smartphone*/
+@media (max-width: 480px) {
+  nav {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  img {
+    width: 60%;
+    height: 20vh;
+  }
+  iframe {
+    width: 70%;
+    height: 30vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
